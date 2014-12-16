@@ -1,10 +1,13 @@
 $(document).ready(function(){
-	$("#owl-demo").owlCarousel({
-	
-		autoPlay: 3000,
-		items: 2,
-		stopOnHover: true,
-		loop: true
-
+$('#BVHK-slideshow').owlCarousel( {
+	loop: true,
+	margin: 10,
+	items: 4,
+	autoplay: true,
+	autoplayTimeout: 3000,
+	autoplayHoverPause: true,
+	dots: true,
+	dotsEach: true,
+	nav: true
 	});
 });
