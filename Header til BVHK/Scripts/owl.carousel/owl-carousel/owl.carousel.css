@@ -87,7 +87,13 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  display: inline;
+  margin: 5px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
 }
+
 .owl-carousel.owl-loaded {
   display: block;
 }
@@ -117,6 +123,7 @@
   display: block;
   width: 100%;
   -webkit-transform-style: preserve-3d;
+
 }
 .owl-carousel.owl-text-select-on .owl-item {
   -webkit-user-select: auto;
