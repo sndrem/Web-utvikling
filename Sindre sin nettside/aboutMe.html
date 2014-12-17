@@ -12,6 +12,10 @@
 		<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css">
 		<!-- Load custom stylesheet -->
 		<link rel="stylesheet" type="text/css" href="aboutMeStyles.css">
+		<!-- Load instafeed -->
+		<script type="text/javascript" src="instafeed.min.js"></script>
+		<!-- Load instabilder -->
+		<script type="text/javascript" src="insta.js"></script>
 		
 	</head>
 
@@ -42,20 +46,20 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Sosiale medier <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="#">Twitter</a></li>
-								<li><a href="#">Facebook</a></li>
-								<li><a href="#">Instagram</a></li>
+								<li><a href="https://twitter.com/sndrem" target="_blank">Twitter</a></li>
+								<li><a href="https://www.facebook.com/sindre.moldeklev" target="_blank">Facebook</a></li>
+								<li><a href="http://instagram.com/sndrem/" target="_blank">Instagram</a></li>
 							</ul>	
 
 						</li>
-						<li><a href="#">Kontakt meg</a></li>
+						<li><a href="#kontakt" data-toggle="modal">Kontakt meg</a></li>
 					</ul>
 
 				</div> 
 		</div>
 	</div> <!-- Slutt på navigasjon -->
 
-	<!-- Klasse for jumbotron og instagram-bilder -->
+	<!-- Klasse for om-meg-panelet og instagram-bilder -->
 	<div class="container">
 		<div class="row">
 				
@@ -76,12 +80,12 @@
 
 				</div>
 
-				<div class="col-lg-3">
-					<code>Her kommer en instafeed med mine bilder</code>
-					<div id="myInstafeed"></div>
+				<!-- Instafeed på store skjermer -->
+
+				<div class="col-lg-3 hidden-xs hidden-sm hidden-md">
+					<div id="instafeed"></div>
 
 				</div>
-			
 		</div>
 	</div>
 

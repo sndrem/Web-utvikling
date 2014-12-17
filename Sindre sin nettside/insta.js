@@ -4,8 +4,8 @@ var feed = new Instafeed({
 	accessToken: '95661.467ede5.d03e71e9761648e181b225636acb6483',
 	clientId: 'da1875ca87904c308343fda60516f077',
 	useHttp: true,
-	limit: 4,
+	limit: 5,
 	resolution: 'thumbnail',
-	template: '<a href="{{link}}"><img src="{{image}}" /><div class="likes">&hearts; {{likes}}</div></a>'
+	template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /><div class="likes">&hearts; {{likes}}</div></a>'
 });
 feed.run();
