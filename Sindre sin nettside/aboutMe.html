@@ -14,21 +14,45 @@
 
 	<body>
 
+		<!-- her lager vi navigasjonsmenyen i toppen -->
 		<div class="navbar navbar-inverse navbar-static-top">
 			<div class="container">
 				
-				
+				<!-- Navbar-brand for tittelen til siden -->
 				<a href="#" class="navbar-brand"> Om Meg</a>
 
-				<div class="collapse navbar-collapse navHeaderCollapse"></div> 
+				<!-- Div'er som lager dropdown-knappen -->
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
 
+
+				<!-- Dropdown-menyen -->
+				<div class="collapse navbar-collapse navHeaderCollapse">
+
+					<!-- Dersom en knapp skal være aktiv kan man legge til class="active" på et element som feks en knapp. -->
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="#">Home</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Sosiale medier <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Twitter</a></li>
+								<li><a href="#">Facebook</a></li>
+								<li><a href="#">Instagram</a></li>
+							</ul>	
+
+						</li>
+						<li><a href="#">Kontakt meg</a></li>
 					</ul>
 
-			</div>
-
+				</div> 
 		</div>
+	</div> <!-- Slutt på navigasjon -->
+
+	<!-- Her lager vi footeren -->
+	
 	
 		<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
 		<script type="text/javascript" src="dist/js/bootstrap.js"></script>
