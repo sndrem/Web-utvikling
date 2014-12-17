@@ -4,17 +4,19 @@
 		<meta charset="utf-8">
 		<title>Om Meg</title>
 
+	<!-- Load font-awesome stylesheet -->
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 		<!-- Include meta tag for correct showing of content for every device -->
 		<meta name="viewport" content="width=device-width", initial-scale="1.0">
 		<!-- Load boostrap css stylesheet -->
 		<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css">
 		<!-- Load custom stylesheet -->
 		<link rel="stylesheet" type="text/css" href="aboutMeStyles.css">
-		<!-- Load font-awesome which is awesome -->
-		<link rel="stylesheet" type="text/css" href="font-awesome.css">
+		
 	</head>
 
 	<body>
+	
 
 		<!-- her lager vi navigasjonsmenyen i toppen -->
 		<div class="navbar navbar-inverse navbar-static-top">
@@ -36,7 +38,7 @@
 
 					<!-- Dersom en knapp skal være aktiv kan man legge til class="active" på et element som feks en knapp. -->
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#">Home</a></li>
+						<li><a href="#">Hjem</a></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Sosiale medier <b class="caret"></b></a>
 							<ul class="dropdown-menu">
@@ -53,11 +55,41 @@
 		</div>
 	</div> <!-- Slutt på navigasjon -->
 
+	<!-- Klasse for jumbotron og instagram-bilder -->
+	<div class="container">
+		<div class="row">
+				
+				<div class="col-lg-9">
+				
+					<div class="panel panel-default">
+						<div class="panel-body">
+							
+							<div class="page-header">
+							<h1>Dette er meg</h1>
+							</div>
+
+
+							<img class="featuredImg" src="Images/sindre.jpg" alt="Sindre" width="100%">
+							<p class="lead text-justify">Mitt navn er Sindre Moldeklev og jeg er 22 år gammel. Bacon ipsum dolor amet doner swine beef ribs chicken tail pork capicola ham hamburger meatball frankfurter corned beef jerky ground round. Sirloin pig bresaola, pork loin jerky pancetta venison leberkas andouille turkey jowl frankfurter. Chicken capicola sausage, strip steak short loin beef corned beef pork chop ham hock prosciutto kielbasa filet mignon rump ham meatball. Strip steak rump shoulder bresaola cow leberkas.</p>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-lg-3">
+					<code>Her kommer en instafeed med mine bilder</code>
+					<div id="myInstafeed"></div>
+
+				</div>
+			
+		</div>
+	</div>
+
 	<!-- Her lager vi footeren -->
-	<div class="navbar">
+	<div class="navbar navbar-default navbar-fixed-bottom">
 		
 		<div class="container">
-			<p class="fa fa-copyright"></p>
+				<p class="navbar-text">Sindre Moldeklev, 2014</p>
 		</div>
 
 	</div>

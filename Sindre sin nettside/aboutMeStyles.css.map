@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAA,IAAI;EACH,aAAa,EAAE,CAAC;;AAGjB,YAAY;EACX,aAAa,EAAE,IAAI",
+"sources": ["aboutMeStyles.scss"],
 "names": [],
 "file": "aboutMeStyles.css"
 }
