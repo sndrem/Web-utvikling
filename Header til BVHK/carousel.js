@@ -10,7 +10,7 @@ $(document).ready(function(){
 		autoplay: true,
 		autoplaySpeed: 10000,
 		autoplayHoverPause: true,
-		navText: ['Forrige', 'Neste'],
+		navText: ['<<', '>>'],
 		animateIn: 'fadeOutLeft'
 		
 		});
