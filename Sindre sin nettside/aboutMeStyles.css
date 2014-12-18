@@ -4,18 +4,26 @@ body {
 .featuredImg {
   margin-bottom: 15px; }
 
-#instafeed a {
-  text-decoration: none; }
-#instafeed .likes {
-  color: #fff;
-  font-size: 25px;
-  position: relative;
-  left: 45px;
-  bottom: 90px;
-  font-family: Arial, Helvetica, sans-serif;
-  opacity: 0.3;
-  transition: opacity 2s; }
-#instafeed .likes:hover {
-  opacity: 1; }
+#instafeed {
+  height: 900px;
+  padding: 5px;
+  background-color: #e6edfd; }
+  #instafeed a {
+    text-decoration: none; }
+  #instafeed img {
+    width: 100%; }
+  #instafeed .likes {
+    color: #fff;
+    font-size: 25px;
+    position: relative;
+    left: 105px;
+    bottom: 137.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.3;
+    transition: opacity 2s; }
+  #instafeed .likes:hover {
+    opacity: 1; }
+  #instafeed .btn {
+    background-color: #517fa4; }
 
 /*# sourceMappingURL=aboutMeStyles.css.map */

@@ -1,3 +1,6 @@
+$instaImgHeight: 275px;
+$instaImgWidth: 210px;
+
 body{
 	margin-bottom: 60px;
 }
@@ -8,16 +11,24 @@ body{
 
 #instafeed{
 
+	height: 900px;
+	padding: 5px;
+	background-color: #e6edfd;
+
 	a {
 		text-decoration: none;
+	}
+
+	img{
+		width: 100%;
 	}
 
 	.likes{
 		color: #fff;
 		font-size: 25px;
 		position: relative;
-		left: 45px;
-		bottom: 90px;
+		left: $instaImgWidth / 2;
+		bottom: $instaImgHeight / 2;
 		font-family: Arial, Helvetica, sans-serif;
 		opacity: 0.3;
 		transition: opacity 2s;
@@ -26,5 +37,10 @@ body{
 	.likes:hover{
 		opacity: 1;
 	}
+
+	.btn{
+		background-color: #517fa4;
+	}
 }
+
 
