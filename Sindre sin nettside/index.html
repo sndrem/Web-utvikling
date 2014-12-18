@@ -1,108 +1,123 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<title>Sindres nettside</title>
-
-		<!--- Load owl carousel stylesheet -->
-		<link rel="stylesheet" type="text/css" href="owl.carousel/owl-carousel/owl.carousel.css">
-
-		<!-- Load owl carousel default theme stylesheet -->
-		<link rel="stylesheet" type="text/css" href="owl.carousel/owl-carousel/owl.theme.css">
-
 		<!-- Load font-awesome stylesheet -->
 		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
-		<!-- Load animate.css for animasjoner i owl carousel -->
-		<link rel="stylesheet" type="text/css" href="owl.carousel/owl-carousel/animate.css">
-
-		<!-- Load regular stylesheet for the rest of the page -->
-		<link rel="stylesheet" type="text/css" href="style.css">
-
+		<!-- Include meta tag for correct showing of content for every device -->
+		<meta name="viewport" content="width=device-width", initial-scale="1.0">
+		<!-- Load boostrap css stylesheet -->
+		<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css">
+		<!-- Load custom stylesheet -->
+		<link rel="stylesheet" type="text/css" href="aboutMeStyles.css">
+		<!-- Load instafeed -->
 		<script type="text/javascript" src="instafeed.min.js"></script>
-		
-		<!--<script type="text/javascript" src="insta.js"></script>-->
-
+		<!-- Load instabilder -->
+		<script type="text/javascript" src="insta.js"></script>
+		<meta charset="utf-8">
+		<title>Forsiden</title>
 	</head>
 
 	<body>
+		<!-- her lager vi navigasjonsmenyen i toppen -->
+		<div class="navbar navbar-inverse navbar-static-top">
+			<div class="container">
+				
+				<!-- Navbar-brand for tittelen til siden -->
+				<a href="#" class="navbar-brand">Sindres hjemmeside</a>
+
+				<!-- Div'er som lager dropdown-knappen -->
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+
+				<!-- Dropdown-menyen -->
+				<div class="collapse navbar-collapse navHeaderCollapse">
+
+					<!-- Dersom en knapp skal være aktiv kan man legge til class="active" på et element som feks en knapp. -->
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="index.html">Hjem</a></li>
+						<li><a href="aboutMe.html">Om Meg</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Sosiale medier <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="https://twitter.com/sndrem" target="_blank">Twitter</a></li>
+								<li><a href="https://www.facebook.com/sindre.moldeklev" target="_blank">Facebook</a></li>
+								<li><a href="http://instagram.com/sndrem/" target="_blank">Instagram</a></li>
+							</ul>	
+
+						</li>
+						<li><a href="#kontakt" data-toggle="modal">Kontakt meg</a></li>
+					</ul>
+
+				</div> 
+		</div>
+	</div> <!-- Slutt på navigasjon -->
 
 	
+	
 
-	<!-- Div for bildeheaderen which is a carousel -->
-		<div id="bildeheader" class="owl-carousel owl-theme">
-			<div class="item"><img src="Images/freestylevmmyrkdalen-2.jpg"></div>
-			<div class="item"><img src="Images/freestylevmmyrkdalen-3.jpg"></div>
-			<div class="item"><img src="Images/freestylevmmyrkdalen-4.jpg"></div>
-			<div class="item"><img src="Images/freestylevmmyrkdalen-5.jpg"></div>
-			<div class="item"><img src="Images/freestylevmmyrkdalen-6.jpg"></div>
-			<div class="item"><img src="Images/freestylevmmyrkdalen-7.jpg"></div>
-			<div class="item"><img src="Images/freestylevmmyrkdalen-8.jpg"></div>
-			<div class="item"><img src="Images/freestylevmmyrkdalen-9.jpg"></div>
-			<div class="item"><img src="Images/freestylevmmyrkdalen-10.jpg"></div>
-			<div class="item"><img src="Images/freestylevmmyrkdalen-11.jpg"></div>
-			<div class="item"><img src="Images/freestylevmmyrkdalen-13.jpg"></div>
-			<div class="item"><img src="Images/freestylevmmyrkdalen-14.jpg"></div>
-			<div class="item"><img src="Images/freestylevmmyrkdalen-15.jpg"></div>
-			<div class="item"><img src="Images/freestylevmmyrkdalen-16.jpg"></div>
+
+
+
+
+
+
+
+		<!-- Her lager vi footeren -->
+	<div class="navbar navbar-default navbar-fixed-bottom">
+		
+		<div class="container">
+				<p class="navbar-text">Sindre Moldeklev, 2014</p>
 		</div>
 
-		<!-- Nav elements center of screen -->
-	<div id="navigasjon">
-		<nav><i class="fa fa-male"></i><a href="#">Om meg</a></nav>
-		<nav><i class="fa fa-camera-retro"></i><a href="#">Bilder</a></nav>
-		<nav><i class="fa fa-at"></i><a href="#">Kontakt</a></nav>
 	</div>
-
-	<!-- Div for sosiale medier til høyre -->
-	<div id="sosialeMedier">
-		<div id="facebook"><a href="https://www.facebook.com/sindre.moldeklev" target="_blank"><i class="fa fa-facebook"></a></i></div>
-		<div id="twitter"><a href="https://twitter.com/sndrem" target="_blank"><i class="fa fa-twitter"></i></a></div>
-	</div>
-
-	<!-- Container for hovedelementene på siden -->
-	<div id="container">
-	
-
-	<div class="content">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci minima recusandae, quam culpa porro saepe animi at minus soluta vitae perspiciatis dolore sed expedita inventore optio earum explicabo! Dolores, aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora iste pariatur inventore cupiditate ipsum minus, voluptatem, repellendus ipsam alias molestias natus, soluta vero dolorum saepe asperiores in architecto praesentium consectetur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente distinctio, voluptate quasi asperiores quam esse officia deserunt dolore repudiandae ex eos quo, sed alias, facere! Molestiae consequuntur voluptatibus, fuga blanditiis!</p>
-	</div>
-	<div class="content">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci minima recusandae, quam culpa porro saepe animi at minus soluta vitae perspiciatis dolore sed expedita inventore optio earum explicabo! Dolores, aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora iste pariatur inventore cupiditate ipsum minus, voluptatem, repellendus ipsam alias molestias natus, soluta vero dolorum saepe asperiores in architecto praesentium consectetur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente distinctio, voluptate quasi asperiores quam esse officia deserunt dolore repudiandae ex eos quo, sed alias, facere! Molestiae consequuntur voluptatibus, fuga blanditiis!</p>
-	</div>
-	<div class="content">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci minima recusandae, quam culpa porro saepe animi at minus soluta vitae perspiciatis dolore sed expedita inventore optio earum explicabo! Dolores, aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora iste pariatur inventore cupiditate ipsum minus, voluptatem, repellendus ipsam alias molestias natus, soluta vero dolorum saepe asperiores in architecto praesentium consectetur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente distinctio, voluptate quasi asperiores quam esse officia deserunt dolore repudiandae ex eos quo, sed alias, facere! Molestiae consequuntur voluptatibus, fuga blanditiis!</p>
-	</div>
-
-	</div> <!-- Slutt på container-elementet -->
-
-	
-
-	<!-- Instagram-feed -->
-	
-	<!--<div id="instafeed">-->
-		<!-- <a href="link">
-				<img src="bilde"/>
-			</a> -->
-	<!--</div> -->
 	
 	
-
-<!-- Footer elementer -->
-	<div class="footerContainer">
-		<div id="footer">
-			<footer>All rights reserved for Sindre Moldeklev, 2014</footer>
+		<!-- Kode for å lage formen for kontakt-informasjonen -->
+<div class="modal fade" id="kontakt" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+						<h4>Send meg en mail!</h4>
+			</div>
+					<div class="modal-body">
+							<form role="form" class="form-horizontal">
+								<div class="form-group">
+									<label for="inputNavn" class="col-lg-2 control-label">Fullt navn</label>
+									<div class="col-lg-10">
+									<input type="email" class="form-control" id="inputNavn" placeholder="Ditt navn">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputMail" class="col-lg-2 control-label">Mail</label>
+									<div class="col-lg-10">
+									<input type="email" class="form-control" id="inputMail" placeholder="olanordmann@mail.no">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="contactMsg" class="col-sm-2 control-label">Melding:</label>
+									<div class="col-sm-10">
+										<textarea class="form-control" rows="8" placeholder="Din melding her"></textarea>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<div class="btn btn-default" data-dismiss="modal">Avbryt</div>
+									<div class="btn btn-primary" type="submit">Send</div>
+								</div>
+							</form>
+					</div>
+						
+				<div>	
+			</div>
 		</div>
-	</div> <!-- Slutt på footer-elementet -->
+	</div>
+</div> <!-- Slutt på modal for kontaktside -->
+
 	
-
-	<!-- Load JQuery -->
-	<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
-
-	<!-- Load owl carousel script -->
-	<script type="text/javascript" src="owl.carousel/owl-carousel/owl.carousel.js"></script>
-
-	<!-- Load the real owl carousel -->
-	<script type="text/javascript" src="owl.js"></script>
+		<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="dist/js/bootstrap.js"></script>
 	</body>	
 </html>

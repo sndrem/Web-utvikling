@@ -6,6 +6,7 @@ var feed = new Instafeed({
 	useHttp: true,
 	limit: 3,
 	resolution: 'thumbnail',
+	sortBy: 'most-liked',
 	template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /><div class="likes">&hearts; {{likes}}</div></a>'
 });
 feed.run();
