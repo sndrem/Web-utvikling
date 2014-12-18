@@ -8,11 +8,7 @@
 		<!-- Load boostrap css stylesheet -->
 		<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css">
 		<!-- Load custom stylesheet -->
-		<link rel="stylesheet" type="text/css" href="aboutMeStyles.css">
-		<!-- Load instafeed -->
-		<script type="text/javascript" src="instafeed.min.js"></script>
-		<!-- Load instabilder -->
-		<script type="text/javascript" src="insta.js"></script>
+		<link rel="stylesheet" type="text/css" href="customStyles.css">
 		<meta charset="utf-8">
 		<title>Forsiden</title>
 	</head>
@@ -57,14 +53,64 @@
 	</div> <!-- Slutt på navigasjon -->
 
 	
+	<!-- Carousel på forsiden -->
 	
+	<div id="myCarousel" class="carousel container slide carousel-fade" data-ride="myCarousel">
+		
+		<ol class="carousel-indicators">
+			<li data-target = "#myCarousel" data-slide-to = "0" class="active"></li>
+			<li data-target = "#myCarousel" data-slide-to = "1"></li>
+			<li data-target = "#myCarousel" data-slide-to = "2"></li>
+			<li data-target = "#myCarousel" data-slide-to = "3"></li>
+			<li data-target = "#myCarousel" data-slide-to = "4"></li>
+			<li data-target = "#myCarousel" data-slide-to = "5"></li>
+		</ol>
 
+		<!-- .img-responsive gjør at bildene kan skaleres på alle enheter -->
+		<!-- Første item må ha .active for å vises -->
+		
+			<div class="carousel-inner"> <!-- Her legger man til flere bilder -->
+				
+				<div class="item active">
+					<img src="Images/carousel-1.jpg" alt="Bilde her" class="img-responsive">
+					
+				</div>
 
+				<div class="item">
+					<img src="Images/carousel-2.jpg" alt="Bilde her" class="img-responsive">
+					
+				</div>
 
+				<div class="item">
+					<img src="Images/carousel-3.jpg" alt="Bilde her" class="img-responsive">
+					
+				</div>
 
+				<div class="item">
+					<img src="Images/carousel-4.jpg" alt="Bilde her" class="img-responsive">
+					
+				</div>
 
+				<div class="item">
+					<img src="Images/carousel-5.jpg" alt="Bilde her" class="img-responsive">
+					
+				</div>
 
+				<div class="item">
+					<img src="Images/carousel-6.jpg" alt="Bilde her" class="img-responsive">
+				
+				</div>
+			</div> <!-- Slutt på carousel-inner -->
 
+			<a href="#myCarousel" class="carousel-control left" data-slide="prev">
+				<span class="icon-prev"></span>
+			</a>
+
+			<a href="#myCarousel" class="carousel-control right" data-slide="next">
+				<span class="icon-next"></span>
+			</a>
+
+	</div> <!-- Slutt på carousel -->
 
 		<!-- Her lager vi footeren -->
 	<div class="navbar navbar-default navbar-fixed-bottom">
@@ -116,8 +162,9 @@
 	</div>
 </div> <!-- Slutt på modal for kontaktside -->
 
-	
 		<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
 		<script type="text/javascript" src="dist/js/bootstrap.js"></script>
-	</body>	
-</html>
+		<!-- Kode for å justere hastigheten på carousel -->
+		<script script type="text/javascript">
+			$('.carousel').carousel({interval:7000})
+		</script>﻿
