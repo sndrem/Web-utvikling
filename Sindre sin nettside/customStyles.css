@@ -54,4 +54,18 @@ body {
 .panel {
   margin-top: 15px; }
 
+h2 small {
+  color: #becdd3; }
+
+.featuredImg {
+  margin-bottom: 15px; }
+
+.panel-heading a {
+  padding: 10px;
+  color: black;
+  opacity: 0.5;
+  transition: opacity 1s; }
+.panel-heading a:hover {
+  opacity: 1; }
+
 /*# sourceMappingURL=customStyles.css.map */
